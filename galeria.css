@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.padre {
+    border: 2px solid rgb(235, 9, 9);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.invisible {
+    /* border: 2px solid rgb(11, 231, 15); */
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    height: 10%;
+ 
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 120%;  
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.fotos{
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+.fotos img {
+    width: 33.3%;
+    height: %;
+   
+}
