@@ -1,0 +1,842 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.padre {
+    border: 2px solid rgb(248, 11, 31);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar {
+    /* border: 2px solid rgb(11, 248, 216); */
+    background-color: rgb(1, 14, 2);
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center
+}
+
+.invisible1 {
+    /* border: 2px solid rgb(12, 12, 12); */
+    display: flex;
+    width: 80vw;
+    justify-content: flex-start;
+}
+
+button {
+    border: none;
+    background-color: rgb(70, 67, 64);
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 500;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transform: translate(1) translate(0, 0);
+    transition: transform 225ms, box-shadow 225ms;
+}
+
+button:hover {
+    transform: scale(1.05) translate(0, -0.15rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
+}
+
+button:active {
+    transform: scale(1) translate(0, 0.15rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+.pagina {
+    background-image: url('papel-acuarela-amarillo_95678-446.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.caja {
+    /* border: 2px solid rgb(159, 240, 9); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.caja2 {
+    /* border: 2px solid rgb(101, 9, 240); */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja3 {
+    border: 10px solid rgb(239, 173, 92);
+    border-radius: 4%;
+    width: 70%;
+    height: 80%;
+
+}
+
+.cajas {
+    /* border: 2px solid rgb(39, 39, 53); */
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.group {
+    position: relative;
+}
+
+.input {
+    font-size: 20px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #fffcfc;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: rgb(218, 214, 214);
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #f9fafc;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #ffffff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+.caja5 {
+    /* border: 2px solid rgb(27, 235, 12); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.origen {
+    /* border: 2px solid rgb(71, 12, 235); */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.group {
+    position: relative;
+}
+
+.input {
+    font-size: 20px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #fffcfc;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #f9fafc;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #ffffff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+.destino {
+    /* border: 2px solid rgb(71, 12, 235); */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.group {
+    position: relative;
+}
+
+.input {
+    font-size: 20px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #fffcfc;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #f9fafc;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #ffffff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+
+
+.group {
+    position: relative;
+}
+
+.input {
+    font-size: 20px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #fffcfc;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: rgb(218, 214, 214);
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #f9fafc;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #ffffff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+.caja7 {
+    /* border: 2px solid rgb(27, 235, 12); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.entrada {
+    /* border: 2px solid rgb(71, 12, 235); */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.group {
+    position: relative;
+}
+
+.input {
+    font-size: 20px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #fffcfc;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #f9fafc;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #ffffff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+.salida {
+    /* border: 2px solid rgb(71, 12, 235); */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.group {
+    position: relative;
+}
+
+.input {
+    font-size: 20px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #fffcfc;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #f9fafc;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #ffffff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+.caja8 {
+    /* border: 2px solid rgb(101, 9, 240); */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pl {
+    display: block;
+    width: 9.375em;
+    height: 9.375em;
+  }
+  
+  .pl__arrows,
+  .pl__ring-rotate,
+  .pl__ring-stroke,
+  .pl__tick {
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .pl__arrows {
+    animation-name: arrows42;
+    transform: rotate(45deg);
+    transform-origin: 16px 52px;
+  }
+  
+  .pl__ring-rotate,
+  .pl__ring-stroke {
+    transform-origin: 80px 80px;
+  }
+  
+  .pl__ring-rotate {
+    animation-name: ringRotate42;
+  }
+  
+  .pl__ring-stroke {
+    animation-name: ringStroke42;
+    transform: rotate(-45deg);
+  }
+  
+  .pl__tick {
+    animation-name: tick42;
+  }
+  
+  .pl__tick:nth-child(2) {
+    animation-delay: -1.75s;
+  }
+  
+  .pl__tick:nth-child(3) {
+    animation-delay: -1.5s;
+  }
+  
+  .pl__tick:nth-child(4) {
+    animation-delay: -1.25s;
+  }
+  
+  .pl__tick:nth-child(5) {
+    animation-delay: -1s;
+  }
+  
+  .pl__tick:nth-child(6) {
+    animation-delay: -0.75s;
+  }
+  
+  .pl__tick:nth-child(7) {
+    animation-delay: -0.5s;
+  }
+  
+  .pl__tick:nth-child(8) {
+    animation-delay: -0.25s;
+  }
+  
+  /* Animations */
+  @keyframes arrows42 {
+    from {
+      transform: rotate(45deg);
+    }
+  
+    to {
+      transform: rotate(405deg);
+    }
+  }
+  
+  @keyframes ringRotate42 {
+    from {
+      transform: rotate(0);
+    }
+  
+    to {
+      transform: rotate(720deg);
+    }
+  }
+  
+  @keyframes ringStroke42 {
+    from,
+      to {
+      stroke-dashoffset: 452;
+      transform: rotate(-45deg);
+    }
+  
+    50% {
+      stroke-dashoffset: 169.5;
+      transform: rotate(-180deg);
+    }
+  }
+  
+  @keyframes tick42 {
+    from,
+      3%,
+      47%,
+      to {
+      stroke-dashoffset: -12;
+    }
+  
+    14%,
+      36% {
+      stroke-dashoffset: 0;
+    }
+  }
