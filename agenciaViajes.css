@@ -24,7 +24,7 @@
 .invisible1 {
     /* border: 2px solid rgb(12, 12, 12); */
     display: flex;
-    width: 80vw;
+    width: 65vw;
     justify-content: flex-start;
 }
 
@@ -53,7 +53,7 @@ button:active {
 }
 
 .ofertas {
-    /* border: 2px solid rgb(7, 247, 79); */
+    border: 2px solid rgb(7, 247, 79);
     height: 230vh;
 }
 

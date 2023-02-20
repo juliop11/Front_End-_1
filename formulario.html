@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="formulario.css">
+    <script src="agencia.js"></script>
     <title>Document</title>
 </head>
 
 <body>
+
     <div class="padre">
         <div class="navbar">
             <div class="invisible1">
@@ -24,15 +26,15 @@
         <div class="pagina">
             <div class="caja">
                 <div class="caja2">
-                    <div class="caja3">
-
+                    
+<form action="agenciaViajes.html" method="get" class="caja3">
                         <div class="cajas">
                             <div class="caja4">
                                 <div class="group">
-                                    <input required="" type="text" class="input">
+                                    <input name="nombre" id="nombre"  type="text" class="input">
                                     <span class="highlight"></span>
                                     <span class="bar"></span>
-                                    <label>Name:</label>
+                                    <label>Nombre:</label>
                                 </div>
                             </div>
                         </div>
@@ -40,7 +42,7 @@
                             <div class="caja5">
                                 <div class="origen">
                                     <div class="group">
-                                        <input required="" type="text" class="input">
+                                        <input name="origen" id="origen"  type="text" class="input">
                                         <span class="highlight"></span>
                                         <span class="bar"></span>
                                         <label>Origen:</label>
@@ -48,7 +50,7 @@
                                 </div>
                                 <div class="destino">
                                     <div class="group">
-                                        <input required="" type="text" class="input">
+                                        <input name="destino" id="destino"  type="text" class="input">
                                         <span class="highlight"></span>
                                         <span class="bar"></span>
                                         <label>Destino:</label>
@@ -59,10 +61,10 @@
                         <div class="cajas">
                             <div class="caja6">
                                 <div class="group">
-                                    <input required="" type="text" class="input">
+                                    <input name="personas" id="personas" type="text" class="input">
                                     <span class="highlight"></span>
                                     <span class="bar"></span>
-                                    <label>Nº personas:</label>
+                                    <label >Nº personas:</label>
                                 </div>
                             </div>
                         </div>
@@ -70,27 +72,37 @@
                             <div class="caja7">
                                 <div class="entrada">
                                     <div class="group">
-                                        <input required="" type="text" class="input">
+                                        <input name="entrada" id="entrada"  type="text" class="input">
                                         <span class="highlight"></span>
                                         <span class="bar"></span>
-                                        <label>Fecha entrada:</label>
+                                        <label >Fecha entrada:</label>
                                     </div>
                                 </div>
                                 <div class="salida">
                                     <div class="group">
-                                        <input required="" type="text" class="input">
+                                        <input name="salida" id="salida"  type="text" class="input">
                                         <span class="highlight"></span>
                                         <span class="bar"></span>
-                                        <label>Fecha salida:</label>
+                                        <label >Fecha salida:</label>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
-
-                    </div>
-
+                        <div class="cajas">
+                            <div class="caja8">
+                                <div class="informacion">
+                                    <button  onclick="mostrarSolicitudes()" > Informacion </button>
+                                </div>
+                                <div class="filtrar">
+                                    <button  type="submit" >Filtrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
                 </div>
-                <div class="caja8">
+                <div class="caja9">
                     <svg class="pl" viewBox="0 0 160 160" width="160px" height="160px"
                         xmlns="http://www.w3.org/2000/svg">
                         <defs>
