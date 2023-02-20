@@ -1,3 +1,4 @@
+
 let datos = [];
 
 function todaInformacion() {
@@ -23,13 +24,22 @@ function todaInformacion() {
 
 }
 
+
+
 function mostrarSolicitudes() {
-    
-    let destino = document.getElementById("destino").value;
-    destino = destino.toUpperCase();
 
-    if (destino == "CANARIAS" || destino == "MALLORCA" || destino == "GALICIA") {
+    let personas = [];
 
-        todaInformacion();
+    for (let i = 0; i < datos.length; i++) {
+
+        if (datos[i].destino.toUpperCase() == "CANARIAS" || datos[i].destino.toUpperCase() == "MALLORCA" || datos[i].destino.toUpperCase() == "GALICIA") {
+
+            personas.push(datos[i].nombre)
+        }
     }
+    console.log(personas);
+
+    document.getElementById("inner").innerHTML =personas;
+    console.log(personas);
 }
+
