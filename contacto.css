@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.padre {
+    /* border: 2px solid rgb(248, 11, 31); */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.cabecera {
+    /* border: 2px solid rgb(20, 22, 22); */
+    background-color: rgb(214, 214, 207);
+    padding: 40px;
+    display: flex;
+    height: 5%;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    align-self: center;
+}
+a {
+    color: black;
+    font-size: 150%;
+    text-decoration: none;
+}
+.contacto{
+    /* border: 2px solid rgb(51, 5, 255); */
+    height: 90%;
+    width: 100%;
+    display: flex;
+    background-image: url('fondo-suelo-textura-madera-blanca.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: row;
+}
+.caja{
+        /* border: 2px solid rgb(255, 0, 34); */
+        color: black;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        font-size: 150%;
+        justify-content:center;
+        align-items: center;
+        line-height:170%     
+}
+p{
+   
+    text-align: center;
+
+}
+
+.caja2{
+    /* border: 2px solid rgb(255, 0, 34); */
+    width: 40%;
+    height: 100%;
+    display: flex;  
+    justify-content: center;  
+    align-items: center;    
+}
+.card {
+    width: 20em;
+    height: 22em;
+    background: #363535;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .card span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 1em;
+    font-size: 1em;
+  }
+  
+  .card .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 0.1em;
+    font-size: 1em;
+    margin: 1em;
+    margin-top: 1em;
+  }
+  
+  .card .img {
+    width: 4.8em;
+    height: 4.8em;
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 1.7em;
+  }
+  .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card .share {
+    text-align: center;
+    margin-top: 1.8em;
+  }
+  
+  .card a {
+    color: white;
+    transition: .4s ease-in-out;
+  }
+  
+  .card a:hover {
+    color: rgb(36, 116, 221);
+  }
+  
