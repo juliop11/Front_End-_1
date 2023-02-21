@@ -53,3 +53,12 @@ p{
     font-size: 180%;
     padding: 50px;
 }
+footer{
+    background-color: rgb(233, 233, 229);
+    padding: 15px;
+    display: flex;
+    height: 5%;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}

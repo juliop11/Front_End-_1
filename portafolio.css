@@ -91,3 +91,13 @@ a {
 p {
     text-align: center;
 }
+footer{
+    background-color: rgb(209, 209, 209);
+    color: black;
+    padding: 15px;
+    display: flex;
+    height: 5%;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}

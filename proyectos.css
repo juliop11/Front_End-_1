@@ -6,14 +6,14 @@
 }
 
 .padre {
-    border: 2px solid rgb(248, 11, 31);
+    /* border: 2px solid rgb(248, 11, 31); */
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
 .cabecera {
-    border: 2px solid rgb(20, 22, 22);
+    /* border: 2px solid rgb(20, 22, 22); */
     background-color: rgb(233, 233, 229);
     padding: 40px;
     display: flex;
@@ -29,7 +29,7 @@ a {
     text-decoration: none;
 }
 .proyectos{
-    border: 2px solid rgb(51, 5, 255);
+    /* border: 2px solid rgb(51, 5, 255); */
     height: 90%;
     width: 100%;
     display: flex;
@@ -40,7 +40,8 @@ a {
     justify-content: space-evenly;
 }
 .proyecto1{
-          border: 2px solid rgb(255, 0, 34);
+          /* border: 2px solid rgb(255, 0, 34); */
+          border-radius: 20%;
           background-image: url("Captura de pantalla (6).png");
           color: black;
           width: 40%;
@@ -48,13 +49,33 @@ a {
           display: flex;
           align-self: center;
 }
+.caja1{
+    color: aliceblue;
+    padding: 40px;
+}
 .proyecto2{
-    border: 2px solid rgb(255, 0, 34);
-    background-image: url("Captura de pantalla (7).png");
+    /* border: 2px solid rgb(255, 0, 34); */
+    border-radius: 20%;
+    background-image: url("Captura de pantalla (8).png");
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black;
     width: 40%;
     height: 70%;
     display: flex;
     align-self: center;
-   
+}
+.caja2{
+    color: aliceblue;
+    padding: 40px;
+}
+footer{
+    background-color: rgb(233, 233, 229);
+    padding: 15px;
+    display: flex;
+    height: 5%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    align-self: center;
 }
