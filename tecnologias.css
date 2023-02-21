@@ -38,13 +38,18 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-   
+    justify-content: center;
 }
 
 .fotos {
     /* border: 2px solid rgb(0, 0, 0); */
-    width: 100%;
+    width: 80%;
     height: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+p{
+    font-size: 180%;
+    padding: 50px;
 }

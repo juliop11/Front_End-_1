@@ -46,40 +46,48 @@ a {
     flex-direction: column;
     justify-content: space-evenly;
 }
-.nombre{
+
+.nombre {
     /* border: 2px solid rgb(230, 7, 130); */
     height: 10%;
     width: 100%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     font-size: 250%;
 }
-.foto1{
+
+.foto1 {
     /* border: 2px solid rgb(51, 5, 255); */
     height: 90%;
     width: 100%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-   
+
 }
-.foto2{
+
+.foto2 {
     /* border: 2px solid rgb(51, 5, 255); */
     height: 80%;
     width: 50%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    
+
 }
-.descripcion{
+
+.descripcion {
     /* border: 2px solid rgb(255, 5, 18); */
     height: 60%;
-    width: 70%;
+    width: 90%;
     display: flex;
     font-size: 150%;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-  
+    line-height: 170%
+}
+
+p {
+    text-align: center;
 }
