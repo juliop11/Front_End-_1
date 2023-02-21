@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.padre {
+    border: 2px solid rgb(248, 11, 31);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-end;
+}
+.pagina{
+    border: 2px solid rgb(0, 255, 13);
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.pagina1 {
+    border: 2px solid rgb(20, 22, 22);
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cajaMovil{
+    border: 2px solid rgb(0, 26, 255);
+    height: 70%;
+    width: 40%;
+}
