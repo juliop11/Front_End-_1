@@ -825,7 +825,7 @@ button {
 
 
 .caja9 {
-    border: 2px solid rgb(101, 9, 240);
+    /* border: 2px solid rgb(101, 9, 240); */
     width: 50%;
     height: 100%;
     display: flex;

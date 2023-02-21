@@ -34,12 +34,20 @@ function mostrarSolicitudes() {
 
         if (datos[i].destino.toUpperCase() == "CANARIAS" || datos[i].destino.toUpperCase() == "MALLORCA" || datos[i].destino.toUpperCase() == "GALICIA") {
 
-            personas.push(datos[i].nombre)
-        }
+          console.log(datos[i]);
+
+            personas += `<ul> 
+                <li>Nombre: ${datos[i].nombre}</li>
+                <li>Origen: ${datos[i].origen}</li>
+                <li>Destino: ${datos[i].destino}</li>
+                <li>Personas: ${datos[i].personas}</li>
+                <li>Entrada: ${datos[i].entrada}</li>
+                <li>Salida: ${datos[i].salida}</li>
+           </ul>`
+
+        }     
     }
-    console.log(personas);
 
     document.getElementById("inner").innerHTML =personas;
-    console.log(personas);
 }
 
