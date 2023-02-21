@@ -6,32 +6,80 @@
 }
 
 .padre {
-    border: 2px solid rgb(248, 11, 31);
+    /* border: 2px solid rgb(248, 11, 31); */
     display: flex;
     flex-direction: column;
-    height: 100vw;
+    height: 100vh;
 }
 
 .pagina {
-    border: 2px solid rgb(20, 22, 22);
-    background-color: rgb(161, 161, 161);
+    /* border: 2px solid rgb(20, 22, 22); */
+    background-image: url('muro-hormigon-gris-claro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    height: 100vh;
-
+    height: 100%;
+    flex-direction: column;
 }
 
 .cabecera {
-    border: 2px solid rgb(20, 22, 22);
-    background-color: rgb(161, 161, 161);
+    /* border: 2px solid rgb(20, 22, 22); */
+    background-color: rgb(209, 209, 209);
     display: flex;
     height: 10%;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
 }
-a{
-    /* background-color: darkgrey; */
-    color: black;
+
+a {
+    color: rgb(146, 50, 50);
     font-size: 130%;
-    text-decoration:none;
+    text-decoration: none;
+}
+
+.foto {
+    /* border: 2px solid rgb(7, 230, 230); */
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.nombre{
+    /* border: 2px solid rgb(230, 7, 130); */
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 250%;
+}
+.foto1{
+    /* border: 2px solid rgb(51, 5, 255); */
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   
+}
+.foto2{
+    /* border: 2px solid rgb(51, 5, 255); */
+    height: 80%;
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.descripcion{
+    /* border: 2px solid rgb(255, 5, 18); */
+    height: 60%;
+    width: 70%;
+    display: flex;
+    font-size: 150%;
+    justify-content:center;
+    align-items: center;
+  
 }
