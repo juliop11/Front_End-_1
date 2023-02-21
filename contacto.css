@@ -7,7 +7,6 @@
 
 .padre {
     /* border: 2px solid rgb(248, 11, 31); */
-  
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -34,7 +33,6 @@ a {
     height: 90%;
     width: 100%;
     display: flex;
-   
     background-image: url('fondo-suelo-textura-madera-blanca.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -57,7 +55,7 @@ p{
 
 }
 
-.cajas2{
+.caja2{
     /* border: 2px solid rgb(255, 0, 34); */
     width: 40%;
     height: 100%;
