@@ -1,0 +1,114 @@
+.grid{
+    display:grid;
+    grid-template-columns:[x0] 3fr [x1] 1fr [x2] ;
+    grid-template-rows: [y0] 1fr [y1] 7fr [y2] 1fr [y3] ;
+    height: 80vh;
+    width: 80vw;
+  
+}
+.header{
+    grid-column: x0 / x2;
+    grid-row: y0 / y1;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 150%;
+padding: 1%;
+}
+
+.color1{
+    grid-column: x0 / x1;
+    grid-row: y0 / y1;
+    background-color: blue;
+}
+.color2{
+    grid-column: x1 / x2;
+    grid-row: y0 / y1;
+    background-color: rgb(89, 224, 107);
+}
+.color3{
+    grid-column: x0 / x2;
+    grid-row: y1 / y2;
+    background-color: rgb(86, 56, 218);
+}
+.azul{
+    display: grid;
+    grid-template-columns:[x0] 3fr [x1] 1.5fr [x2] ;
+    grid-template-rows: [y0] 1fr [y1] 3fr [y2] ;
+    background-color: blue;
+    grid-column: x0 / x1;
+    grid-row: y1 / y2;
+    padding: 12px;
+}
+.contenido{
+    display: grid;
+    grid-column: x0 / x2;
+    grid-row: y0 / y1;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    font-size: 40px;
+}
+.texto1{
+    grid-column: x0 / x1;
+    grid-row: y1 / y2;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    margin: 5px;
+    padding: 10px;
+}
+.texto2{
+    grid-column: x1 / x2;
+    grid-row: y1 / y2;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    margin: 5px;
+    padding: 10px;
+}
+.verde{
+    display: grid;
+    grid-template-columns:[x0] 1fr [x1] ;
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4] ;
+    background-color: rgb(0, 255, 42);
+    grid-column: x1 / x2;
+    grid-row: y1 / y2;
+}
+.verde *{
+    background-color: black;
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+.menu{
+   background: none;
+   margin: 5px;
+   padding: 10px;
+   font-size: 25px;
+ 
+}
+.morado{
+    display: grid;
+    background-color: blueviolet;
+    grid-column: [x0]1fr [x1]1fr [x2];
+    grid-column: x0 / x2;
+
+}
+.footer1{
+    border: 3px solid rgb(0, 0, 0);
+    color: white;
+    grid-row: x0 / x1;
+    text-align: center;
+    margin: 4px;
+    padding: 15px;
+}
+.footer2{
+    border: 3px solid rgb(0, 0, 0);
+    color: white;
+    grid-row: x1 / x2;
+    text-align: center;
+    margin: 4px;
+    padding: 15px;
+}

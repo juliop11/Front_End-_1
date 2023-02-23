@@ -1,0 +1,39 @@
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 2fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+    height: 80vh;
+}
+
+.a {
+    background-color: rgb(15, 248, 7);
+    color: rgb(0, 0, 0);
+}
+
+.b {
+    background-color: black;
+    color: white;
+}
+
+.c {
+    background-color: rgb(15, 248, 7);
+    color: rgb(0, 0, 0);
+}
+
+.d {
+    background-color: black;
+    color: white;
+}
+
+.e {
+    background-color: rgb(15, 248, 7);
+    color: rgb(0, 0, 0);
+}
+
+.f {
+    background-color: black;
+    color: white;
+}
