@@ -30,12 +30,13 @@
 .caja {
     grid-area: aside;
     background-color: rgb(223, 118, 13);
-    height: 520px;
+    height: 500px;
+    padding: 10px;
+
     display: grid;
-
-
     grid-template-areas:
         "aside"
+        "vacio"
         "aside2";
 }
 
@@ -44,8 +45,7 @@
     background-color: white;
     color: rgb(223, 118, 13);
     text-align: center;
-    height: 200px;
-   
+ 
 }
 
 .d {
@@ -53,8 +53,10 @@
     background-color: white;
     color: rgb(223, 118, 13);
     text-align: center;
-    height: 200px;
-  
+   
+}
+.vacio{
+    grid-area: vacio;
 }
 
 .caja2 {
@@ -62,7 +64,7 @@
     background-color: rgb(227, 81, 13);
     height: 500px;
     color: white;
-    padding: 1%;
+    padding: 10px;
 
     grid-template-areas:
         "contenido contenido"
@@ -73,7 +75,7 @@
     grid-area: contenido;
     border: 1px solid rgb(255, 255, 255);
     text-align: center;
-    height: 50%;
+    height: 45%;
 
 
 }
@@ -82,7 +84,8 @@
     grid-area: texto;
     border: 1px solid rgb(255, 255, 255);
     text-align: center;
-    height: 50%;
+    height: 45%;
+    margin-top: 2%;
 
 
 }
