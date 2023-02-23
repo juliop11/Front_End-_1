@@ -1,0 +1,312 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.padre {
+    /* border: 2px solid rgb(248, 11, 31); */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-end;
+}
+
+.pagina {
+    /* border: 2px solid rgb(0, 255, 13); */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cajas {
+    /* border: 2px solid rgb(0, 26, 255); */
+    height: 90%;
+    width: 30%;
+    align-self: center;
+}
+
+.cajaMovil {
+    /* border: 2px solid rgb(0, 26, 255); */
+    height: 90%;
+    width: 27%;
+    align-self: center;
+}
+
+.cajaUsuario {
+    /* border: 2px solid rgb(0, 255, 13); */
+    height: 60%;
+    width: 80%;
+    margin: 15px;
+}
+
+.cajaUsuario2 {
+    /* border: 2px solid rgb(0, 255, 13); */
+    height: 23%;
+    width: 80%;
+    margin: 15px;
+    flex-direction: column;
+
+}
+
+.usuario {
+    border: 1px solid rgb(204, 198, 195);
+    border-radius: 0.1%;
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario1 {
+    /* border: 1px solid rgb(18, 18, 17); */
+    font-family: 'Courgette', cursive;
+    font-size: 42px;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.usuario2 {
+    /* border: 1px solid rgb(18, 18, 17); */
+    height: 23.33%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    text-decoration: none;
+}
+
+.telefono {
+    border: 1px solid rgb(204, 198, 195);
+    background-color: rgb(250, 249, 249);
+    color:rgb(158, 157, 157) ;
+    border-radius: 3%;
+    height: 44%;
+    width: 75%;
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 75%;
+    padding: 3%;
+    
+}
+.contraseña {
+    border: 1px solid rgb(204, 198, 195);
+    background-color: rgb(250, 249, 249);
+    color:rgb(158, 157, 157) ;
+    border-radius: 3%;
+    height: 44%;
+    width: 75%;
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 75%;
+    padding: 3%;
+}
+
+.usuario3 {
+    /* border: 1px solid rgb(18, 18, 17); */
+    height: 23.33%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.entrar {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #65adf0;
+    color: white;
+    border-radius: 10%;
+    height: 42%;
+    width: 75%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.rayas {
+  
+  
+    height: 1%;
+    width: 70%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: flex-start;
+  
+    gap: 3%;
+
+}
+
+.usuario4 {
+    /* border: 1px solid rgb(18, 18, 17); */
+    height: 23.33%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.iniciar {
+    /* border: 1px solid rgb(142, 142, 139); */
+    color: rgb(8, 8, 146);
+    border-radius: 3%;
+    height: 44%;
+    width: 75%;
+    display: flex;
+    font-size: 95%;
+    align-self: center;
+    justify-content: center;
+}
+
+.iniciar2 {
+    /* border: 1px solid rgb(18, 18, 17); */
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.olvido {
+    /* border: 1px solid rgb(142, 142, 139); */
+    border-radius: 3%;
+    height: 44%;
+    width: 75%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 75%;
+    align-items: center;
+}
+.registrate{
+    border: 1px solid rgb(204, 198, 195);
+        color: rgb(46, 45, 45);
+        border-radius: 0.1%;
+        height: 40%;
+        width: 95%;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 100%;
+    }
+    .color{
+        color: #65adf0
+    }
+.aplicacion{
+    /* border: 1px solid rgb(215, 108, 55); */
+    border-radius: 0.1%;
+    height: 60%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+.descarga{
+    /* border: 1px solid rgb(12, 12, 12); */
+    color: rgb(46, 45, 45);
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+}
+.aplicaciones{
+    /* border: 1px solid rgb(12, 12, 12); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60%;
+    width: 100%;
+}
+.aplicaciones1{
+    /* border: 1px solid rgb(53, 0, 243); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+._aa5q{
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.imgGoogle{
+    /* border: 1px solid rgb(49, 243, 0); */
+    height: 100%;
+    width: 70%;
+   
+}
+
+.aplicaciones2{
+    /* border: 1px solid rgb(53, 0, 243); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+.a5q{
+  
+    height: 100%;
+    width: 100%;
+}
+.footer{
+    /* border: 1px solid rgb(53, 0, 243); */
+    height: 80%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+  
+}
+.palabras{
+    color: rgb(139, 138, 137);
+    width: 70%;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+.palabras .p{
+    color: rgb(139, 138, 137);
+}
+
+
+
+
+ @media screen and (max-width: 1300px){ 
+    .cajaMovil{
+        display: none;
+    }
+} 
